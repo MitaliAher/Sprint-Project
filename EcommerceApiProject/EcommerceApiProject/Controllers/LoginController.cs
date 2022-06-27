@@ -21,6 +21,11 @@ namespace EcommerceApiProject.Controllers
             db = _db;
             iJWTMangerRepository = _iJWTMangerRepository;
         }
+        [HttpGet]
+        public IEnumerable<LoginTbl> GetLogins()
+        {
+            return db.LoginTbls;
+        }
 
         [HttpPost]
         [Route("login")]

@@ -16,6 +16,8 @@ import { CategoryComponent } from './category/category.component';
 import { PaymentComponent } from './payment/payment.component';
 import { AdminComponent } from './admin/admin.component';
 import { AddDetailsComponent } from './add-details/add-details.component';
+import { UserDetailsComponent } from './user-details/user-details.component';
+import { SearchComponent } from './search/search.component';
 
 
 @NgModule({
@@ -31,6 +33,8 @@ import { AddDetailsComponent } from './add-details/add-details.component';
     PaymentComponent,
     AdminComponent,
     AddDetailsComponent,
+    UserDetailsComponent,
+    SearchComponent,
   ],
   imports: [
     BrowserModule,

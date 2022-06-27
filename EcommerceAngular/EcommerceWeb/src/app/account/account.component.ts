@@ -3,6 +3,7 @@ import { Product } from '../models/Product';
 import { ProductService } from '../services/product.service';
 import { Router } from '@angular/router';
 import { CartService } from '../services/cart.service';
+//import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-account',
@@ -11,7 +12,7 @@ import { CartService } from '../services/cart.service';
 })
 export class AccountComponent implements OnInit {
 public products : any;
-  constructor(private _productservice: ProductService,private CartService : CartService) { }
+  constructor(private _productservice: ProductService,private CartService : CartService,private _router:Router) { }
 
  // products: Array<Product> = new Array<Product>();
   ngOnInit(): void {

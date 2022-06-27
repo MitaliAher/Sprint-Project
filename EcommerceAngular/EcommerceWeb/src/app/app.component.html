@@ -6,11 +6,10 @@
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="nav navbar-nav navbar-right">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" routerLink="/home" style="padding-left: 800px;">Home</a>
+          <a class="nav-link active" aria-current="page" routerLink="/home">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" *ngIf="LoggedIn(false)" routerLink="/login">Login</a>
@@ -26,11 +25,26 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" routerLink="/cart">Cart</a>
+
         </li>
       </ul>
     </div>
+    <div class="search" style="width: 500px; display: flex;">
+      <input type="text" class="search-box" placeholder="Search products" style="width: 390px;
+      height: 40px;
+      padding: 10px;
+      border-radius: 10px;
+      border: 1px solid #d1d1d1;
+      text-transform: capitalize;
+      background: none;
+      color: black;
+      outline: none;">
+      <button class="btn btn-md btn-success" style="margin-left: 5px;" >search</button>
+  </div>
   </div>
 </nav>
+
+
 
 
 <div class="container">

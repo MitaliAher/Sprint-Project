@@ -11,6 +11,7 @@ import { CategoryComponent } from './category/category.component';
 import { PaymentComponent } from './payment/payment.component';
 import { AdminComponent } from './admin/admin.component';
 import { AddDetailsComponent } from './add-details/add-details.component';
+import { UserDetailsComponent } from './user-details/user-details.component';
 
 const routes: Routes = [
   {
@@ -60,6 +61,14 @@ const routes: Routes = [
   {
     path:'addDetails',
     component:AddDetailsComponent
+  },
+  {
+    path:'userdetails',
+    component:UserDetailsComponent
+  },
+  {
+    path:'search/:searchTerm',
+    component:AccountComponent
   }
 ];
 

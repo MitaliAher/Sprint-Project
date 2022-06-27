@@ -1,1 +1,49 @@
 <img class="card-img-top" src="../../assets/vector-e-commerce-banner-design-light-blue-background-icons-are-collected-honeycomb-like-module-vector-illustration_297535-2875.webp" alt="Card image cap" style="height: 37em;">
+<div class="card-top container-fluid">
+    <div class="container d-flex">
+        <div class="item">
+            <a >
+                <img  src="https://rukminim1.flixcart.com/flap/128/128/image/f15c02bfeb02d15d.png?q=100" alt="">
+                <h6>All products</h6>
+            </a>
+        </div>
+        <div class="item">
+            <a>
+                <img style="width: 90px; margin-top: 10px;" src="../../assets/bag.webp" alt="">
+                <h6>Bags</h6>
+            </a>
+        </div>
+        <div class="item">
+            <a >
+                <img style="width: 90px; margin-top: 10px;" src="../../assets/w5.webp" alt="">
+                <h6>Watch</h6>
+            </a>
+        </div>
+        <div class="item">
+            <a >
+                <img style="width: 90px; margin-top: 10px;" src="../../assets/p1.webp" alt="">
+                <h6>Home Decor</h6>
+            </a>
+        </div>
+        <div class="item">
+            <a >
+                <img style="width: 90px; margin-top: 10px;" src="../../assets/e1.webp" alt="">
+                <h6>Electronics</h6>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="row mt-5" style="background-color:lightgray;">
+    <div class="col-md-4 mb-3" *ngFor="let product of products">
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="../../assets/{{product.productImage}}" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">{{product.productName}}</h5>
+                <p class="card-text">{{product.productDescription}}</p>
+                <p class="card-text"> ₹{{product.productMrp}}</p>
+               <!--<button  class="btn btn-primary" (click)="addtocart(product)" routerLink="/login">Login to buy product</button>-->
+                <a (click)="addtocart(product)" routerLink="/login">Login to buy product</a>
+            </div>
+        </div>
+    </div>
+</div>
