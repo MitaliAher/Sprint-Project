@@ -1,0 +1,15 @@
+
+
+<div class="row mt-5" style="background-color:lightgray;">
+    <div class="col-md-4 mb-3" *ngFor="let product of products">
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="../../assets/{{product.productImage}}" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">{{product.productName}}</h5>
+                <p class="card-text">{{product.productDescription}}</p>
+                <p class="card-text"> ₹{{product.productMrp}}</p>
+                <button  class="btn btn-primary" (click)="addtocart(product)" routerLink="/cart">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+</div>
